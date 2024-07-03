@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Todo App</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/moment@2.29.1/min/moment.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="login.css">
+</head>
+
+<body>
+    <div class="container" id="container">
+        <h1>Log In</h1>
+        <form class="login-form" method="post" name="form" onsubmit="return validation()">
+            <input type="text" id="email" class="email" placeholder="Email" /><br />
+            <div id="email-error">⚠️ Please fill up your Email</div>
+            <input type="password" id="password" class="password" placeholder="Password" />
+
+            <button class="toggle-password" id="toggle-password" type="button">
+                SHOW
+            </button>
+            <div id="pass-error">⚠️ Please fill up your password</div>
+        </form>
+
+        <div>
+            <button type="submit" class="submit" id="submit" value="Log In">
+                Log In
+            </button>
+        </div>
+    </div>
+    <script src="login.js"></script>
+</body>
+
+</html>

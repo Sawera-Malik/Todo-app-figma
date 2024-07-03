@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Todo App</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/moment@2.29.1/min/moment.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="webPage.css">
+</head>
+
+<body>
+    <div class="web" id="web-section">
+        <div class="overlay" id="overlay"></div>
+
+        <div class="taskWeb">
+            <button class="task" id="task">
+                <i class="fa-solid fa-clipboard-list"></i>
+                Task
+            </button>
+            <button class="location" id="location">
+                <i class="fa-solid fa-location-dot"></i>
+                Location
+            </button>
+            <button class="logout" id="logout" onclick="out()">
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                Logout
+            </button>
+        </div>
+
+        <section class="newTask" id="newTask">
+            <div class="web-newTask">
+                <h1>New Task</h1>
+                <div class="body" id="body">
+                    <div class="text">
+                        <i class="fa-regular fa-comment"></i>
+                        <input type="text" class="text" id="summary" placeholder="Summary" />
+                    </div>
+                    <div class="text">
+                        <i class="fa-solid fa-align-right"></i>
+                        <input type="text" class="text" id="description" placeholder="Description" /><br />
+                    </div>
+                    <div class="text">
+                        <i class="fa-regular fa-clock"></i>
+                        <input type="text" class="text" id="dueDate" placeholder="Due date" /><br />
+                    </div>
+                    <button class="btn" id="save">Save</button><br />
+                    <button class="btn" id="cancel">Cancel</button>
+                </div>
+            </div>
+        </section>
+        <div class="section" id="section">
+            <div class="taskPage">
+                <div class="topSec">
+                    <button class="addTask" id="addTask">+ Add new task</button>
+                    <p>Incomplete:</p>
+                    <div id="Incomplete">
+                        <ul id="incomp"></ul>
+                    </div>
+                </div>
+
+                <div id="complete">
+                    <p>completed:</p>
+                    <div class="comText">
+                        <ul id="comp"></ul>
+                    </div>
+                </div>
+            </div>
+            <div class="reminder" id="reminder">
+
+                <h1 class="summ" id="summ"></h1>
+                <p class="des" id="des"></p>
+                <button type="button" class="skip" id="skip">Skip</button>
+                <button type="button" class="remind" id="remind">Remind me later</button>
+                <div class="icon"><i class="fa-regular fa-clock"></i></div>
+            </div>
+
+        </div>
+
+    </div>
+    <script src="webPage.js"></script>
+
+
+
+</body>
+
+</html>

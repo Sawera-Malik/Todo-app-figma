@@ -1,0 +1,390 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+}
+.task {
+    transform: translateX(-0.01px);
+    border: none;
+    font-weight: bolder;
+    width: 250px;
+    height: 55px;
+    position: absolute;
+    top: 42px;
+    padding: 5.5px 123px 30px 47px;
+    gap: 0px;
+    border-radius: 0px 100px 100px 0px;
+    background: rgb(0, 0, 0);
+    color: white;
+}
+.location {
+    width: 250px;
+
+    position: absolute;
+    width: 250px;
+    height: 55px;
+    top: 114px;
+    padding: 5.55px 89px 15.55px 48px;
+    gap: 0px;
+    border-radius: 0px 100px 100px 0px;
+    border: none;
+    font-weight: bolder;
+}
+
+.location:hover {
+    background: black;
+    color: white;
+}
+
+.fa-clipboard-list {
+    font-size: 20px;
+    margin: 10px;
+}
+
+.fa-location-dot {
+    font-size: 20px;
+    margin: 10px;
+}
+
+
+.logout {
+    position: absolute;
+    height: 55px;
+    top: 638px;
+    padding: 17px 103px 16px 48px;
+    gap: 0px;
+    border-radius: 0px 20px 20px 0px;
+    border: none;
+}
+
+.logout:hover {
+    background: black;
+    color: white;
+}
+.section {
+    width: 80%;
+    border: 2px solid black;
+    align-items: flex-end;
+    border: none;
+}
+
+.addTask {
+    padding: 10px;
+    margin-top: 30px;
+    font-weight: bold;
+    background: white;
+    border: none;
+    font-size: large;
+    border-radius: 20px;
+}
+
+.addTask:hover {
+    background: black;
+    color: white;
+    cursor: pointer;
+}
+
+p {
+    margin-top: 20px;
+    font-weight: bold;
+    margin: 20px;
+}
+.web {
+    width: Hug (342px) px;
+    height: Hug (621px) px;
+    top: 50px;
+    left: 342px;
+    gap: 32px;
+    opacity: 0px;
+    /* display: none; */
+}
+.taskWeb {
+    width: 20%;
+    height: 100vh;
+    border: none;
+
+    background: white;
+}
+
+.overlay {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    z-index: 999;
+    background: rgba(110, 103, 103, 0.8);
+    display: none;
+}
+
+.newTask {
+    width: 100%;
+
+    
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    transition: 1s;
+    top: 50%;
+    left: 50%;
+}
+
+.web-newTask {
+    border-radius: 10px;
+    border: 1px solid black;
+    width: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    padding: 50px;
+}
+
+.body {
+    text-align: center;
+    padding-left: 20px;
+    margin-left: 30px;
+}
+
+#summary,
+#description,
+#dueDate {
+    width: 90%;
+    padding-left: 40px;
+    font-size: large;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#summary {
+    padding-bottom: 50px;
+}
+
+#description {
+    padding-bottom: 15%;
+}
+
+#dueDate {
+    padding-bottom: 20px;
+}
+
+.fa-comment {
+    transform: translateX(2rem);
+    line-height: 10px;
+    font-size: 20px;
+}
+
+.fa-align-right {
+    transform: translateX(1.8rem);
+    line-height: 10px;
+    font-size: 20px;
+}
+
+.fa-clock {
+    transform: translateX(2rem);
+    line-height: 10px;
+    font-size: 20px;
+}
+
+.btn {
+    width: 40%;
+    padding: 15px;
+    border: none;
+    border-radius: 20px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.btn:hover {
+    background: black;
+    color: white;
+}
+
+.topSec {
+    width: 342px;
+    height: 371px;
+    gap: 0px;
+    opacity: 0px;
+}
+
+#Incomplete {
+    width: Hug (342px) px;
+    height: Hug (289px) px;
+    top: 82px;
+    gap: 16px;
+    opacity: 0px;
+}
+
+#complete {
+    width: 342px;
+    height: 218px;
+    gap: 0px;
+    opacity: 0px;
+}
+
+#incomp li {
+    list-style: none;
+    font-size: 17px;
+    padding: 8px 3px 0px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    width: Hug (342px) px;
+    height: Hug (289px) px;
+    top: -20px;
+    gap: 16px;
+    opacity: 1px;
+}
+
+#incomp li::before {
+    content: "";
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    transform: translate(10px,-5px);
+    background-image: url('square.png');
+    background-position: center;
+    background-size: cover;
+    top: 14px;
+    left: 8px;
+}
+
+.timeSpan {
+    list-style: none;
+    font-size: 14px;
+    padding: 10px 1px 1px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    color: rgb(175, 173, 173);
+}
+
+.timeSpan::before {
+    content: "";
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    background-image: url("https://images.rawpixel.com/image_png_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA2L3JtNTM1YmF0Y2gyLWNsb2NrMi0wOWEucG5n.png");
+    background-position: center;
+    background-size: cover;
+    top: 5px;
+    left: 8px;
+    color: rgb(173, 169, 169);
+    transform: translateX(20px);
+}
+
+.comText {
+    width: Hug (342px) px;
+    height: Hug (184px) px;
+    top: 437px;
+    gap: 16px;
+    opacity: 0px;
+}
+
+#comp li::before.timeSpan {
+    display: none;
+}
+
+#comp li {
+    list-style: none;
+    font-size: 17px;
+    padding: 14px 0px 0px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    color: rgb(189, 189, 190);
+    width: 342px;
+    height: 40px;
+    gap: 0px;
+    opacity: 0px;
+}
+
+#comp li::before {
+    content: "";
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    transform: translate(10px,-5px);
+    background-image: url('checkbox.png');
+    background-position: center;
+    background-size: cover;
+    top: 14px;
+    left: 8px;
+}
+
+.web {
+    display: flex;
+}
+
+
+
+.reminder {
+    /* border: 2px solid black; */
+    width: 26%;
+    /* height: 10vh; */
+    position: absolute;
+    top: 0%;
+    left: 73%;
+    display: none;
+}
+
+.reminder .summ {
+    font-size: 20px;
+    margin-top: 30px;
+    padding: 10px;
+}
+
+.reminder .des {
+    /* margin-top: 5%; */
+    padding-top: 0%;
+    transform: translate(-5px, -25px);
+    font-weight: lighter;
+    color: rgb(117, 113, 113);
+}
+
+.reminder .skip {
+    transform: translate(195px, -10px);
+    margin: 15px;
+    border: none;
+    background: white;
+    cursor: pointer;
+    display: block;
+}
+
+.remind {
+    transform: translate(260px, -40px);
+    border: none;
+    background: white;
+    font-weight: bold;
+    cursor: pointer;
+    display: block;
+}
+
+.reminder .icon {
+    background: rgb(240, 170, 39);
+    width: 50px;
+    border-radius: 10px;
+    position: absolute;
+    left: 80%;
+    top: 22%;
+}
+
+.reminder .icon i {
+    width: 20%;
+    height: 45px;
+    border: 20px black;
+    /* background: orangered; */
+    transform: translate(15px, 17px);
+}
+
+

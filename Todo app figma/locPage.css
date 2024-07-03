@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+}
+.task {
+  transform: translateX(-0.01px);
+  border: none;
+  font-weight: bolder;
+  width: 250px;
+  height: 55px;
+  position: absolute;
+  top: 42px;
+  padding: 5.5px 123px 30px 47px;
+  gap: 0px;
+  border-radius: 0px 100px 100px 0px;
+}
+.task:hover {
+  background: black;
+  color: white;
+}
+.location {
+  width: 250px;
+
+  position: absolute;
+  width: 250px;
+  height: 55px;
+  top: 114px;
+  padding: 5.55px 89px 15.55px 48px;
+  gap: 0px;
+  border-radius: 0px 100px 100px 0px;
+  border: none;
+  font-weight: bolder;
+  background: black;
+  color: white;
+}
+.fa-clipboard-list {
+  font-size: 20px;
+  margin: 10px;
+}
+
+.fa-location-dot {
+  font-size: 20px;
+  margin: 10px;
+}
+
+.logout {
+  position: absolute;
+  height: 55px;
+  top: 638px;
+  padding: 17px 103px 16px 48px;
+  gap: 0px;
+  border-radius: 0px 20px 20px 0px;
+  border: none;
+}
+.logout:hover {
+  background: black;
+  color: white;
+}
+.location-page {
+  width: 80%;
+  border: 1px solid black;
+  position: absolute;
+  left: 20%;
+  height: 100vh;
+  padding-top: 5%;
+  border: none;
+}
+.locationPage {
+  width: 342px;
+  height: 600px;
+  position: absolute;
+  top: 10px;
+
+  gap: 32px;
+}
+.locSec {
+  width: 342px;
+  height: 127px;
+  gap: 32px;
+}
+.addLoc {
+  width: 130px;
+  height: 50px;
+  left: 1px;
+  background: rgb(251, 250, 250);
+  padding: 10px;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 20px;
+  border: none;
+  position: absolute;
+  top: 40px;
+  padding-left: 1px;
+}
+
+.addLoc:hover {
+  background: black;
+  color: white;
+  cursor: pointer;
+}
+h1 {
+  width: 200px;
+  height: 18px;
+
+  font-size: large;
+  font-weight: bold;
+  position: absolute;
+  top: 100px;
+  left: 1px;
+}
+
+.current li {
+  list-style: none;
+  font-size: 17px;
+  padding: 8px 3px 0px 50px;
+  user-select: none;
+  position: relative;
+  width: 342px;
+  font-weight: lighter;
+  top: 130px;
+  cursor: pointer;
+}
+
+.current li::before {
+  content: "📍";
+  position: absolute;
+  height: 15px;
+  width: 15px;
+  transform: translate(10px, -10px);
+  background-position: center;
+  background-size: cover;
+  top: 14px;
+  left: 8px;
+}
+
+h2 {
+  width: 200px;
+  height: 18px;
+  top: 200px;
+  left: 1px;
+  gap: 0px;
+  opacity: 0px;
+  font-size: large;
+  font-weight: bold;
+  position: absolute;
+}
+.locSpan {
+  color: rgb(188, 186, 186);
+}
+
+.previous li {
+  list-style: none;
+  font-size: 17px;
+  padding: 8px 3px 0px 50px;
+  user-select: none;
+  cursor: pointer;
+  position: relative;
+  width: 342px;
+  font-weight: lighter;
+  top: 100px;
+  gap: 16px;
+}
+
+.previous li::before {
+  content: "📍";
+  position: absolute;
+  height: 15px;
+  width: 15px;
+  transform: translate(10px, -10px);
+  background-position: center;
+  background-size: cover;
+  top: 14px;
+  left: 8px;
+}

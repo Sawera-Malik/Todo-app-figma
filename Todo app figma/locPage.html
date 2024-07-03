@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Todo App</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <link rel="stylesheet" type="text/css" href="locPage.css">
+</head>
+
+<body>
+    <div class="web" id="web-section">
+        <div class="overlay" id="overlay"></div>
+
+        <div class="taskWeb">
+            <button class="task" id="task">
+                <i class="fa-solid fa-clipboard-list"></i>
+                Task
+            </button>
+            <button class="location" id="location">
+                <i class="fa-solid fa-location-dot"></i>
+                Location
+            </button>
+            <button class="logout" id="logout" onclick="out()">
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                Logout
+            </button>
+        </div>
+        <div class="location-page" id="location-page">
+            <div class="locationPage">
+                <div class="locSec">
+                    <button class="addLoc" id="addLoc">+ Check in</button>
+                    <h1>Current location:</h1>
+                    <div id="currentLoc">
+                        <ul id="current" class="current">
+
+                        </ul>
+                    </div>
+                </div>
+                <div id="previousLoc">
+                    <h2>Previous location:</h2>
+                    <div class="previousLoc">
+                        <ul id="previous" class="previous">
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="locPage.js"></script>
+
+</body>
+
+</html>
